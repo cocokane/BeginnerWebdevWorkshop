@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="../public/css/nav.css">
+	<link rel="shortcut icon" href="../public/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<style>
+		/* .slider-for{
+			height: ;
+		} */
+		.slider-for img{
+			display: flex;
+			margin: auto;
+			height: 80vh;
+		}
+		.slider-nav img{
+			display: flex;
+			margin: auto;
+			height: 4rem;
+		}
+		.imgdiv{
+			background: url("../public/img/shop/batmanshirt2.webp") no-repeat center center/cover;
+			transition: all 500ms ease-in-out;
+			padding-bottom: 28rem;
+		}
+		.imgdiv:hover{
+			background: url("../public/img/shop/batmanshirt3.webp") no-repeat center center/cover;
+		}
+		footer{
+			height: max-content;
+			font-family: 'Shizuru', cursive;
+		}
+		@media only screen and (max-width: 800px) {
+			footer>svg{
+				display: none;
+			}
+		}
+	</style>
+	<title>Batman | Shop</title>
+</head>
+<body class="bg-gray-800 text-white">
+	<nav class="list-none flex flex-col justify-center items-center px-4 text-xl fixed right-0 z-50 transition-all">
+		<li class="bg-gray-900 p-3 rounded-full hover:bg-yellow-300" id="home"><a href="/src/index.html"><i class="bi bi-house"></i></a></li>
+		<li class="bg-gray-900 p-3 rounded-full my-6 hover:bg-yellow-300" id="bat"><a href="/src/about.html"><img src="../public/img/151366.svg" alt="" class="h-8 w-8"></a></li>
+		<li class="bg-gray-900 p-3 rounded-full hover:bg-yellow-300" id="shop"><a href="/src/shop.html"><i class="bi bi-bag"></i></a></li>
+	</nav>
+
+	<section class="hero">
+		<div class="slider slider-for bg-black">
+			<div class="slick-slide"><img src="../public/img/shop/batmobile.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batrang.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batman1.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt2.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt3.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt4.webp"></div>
+			<div class="slick-slide"><img src="../public/img/joker.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/197369.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/72397.jpg"></div>
+		</div>
+		<div class="slider slider-nav w-5/6 hidden sm:flex m-auto mt-4 p-4 px-12 border-2 border-white bg-gray-700 rounded-lg">
+			<div class="slick-slide"><img src="../public/img/shop/batmobile.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batrang.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batman1.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt2.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt3.webp"></div>
+			<div class="slick-slide"><img src="../public/img/shop/batmanshirt4.webp"></div>
+			<div class="slick-slide"><img src="../public/img/joker.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/197369.jpg"></div>
+			<div class="slick-slide"><img src="../public/img/72397.jpg"></div>
+		</div>
+	</section>
+
+	<section class="flex flex-wrap justify-center">
+		<div class="font-bold my-4 w-full text-center text-5xl" style="font-family: 'Shizuru', cursive;">SHOP</div>
+		<div class="h-max md:w-1/3 w-full">
+			<div class="border-white border-2 m-4 h-max rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+				<div class="imgdiv shadow-sm"></div>
+				<div class="content-div p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur dicta recusandae!</div>
+				<button class="py-2 px-4 flex m-auto rounded-lg bg-blue-700 hover:bg-green-500 transition-all mb-4">Shop Now</button>
+			</div>
+		</div>
+		
+		<div class="h-max md:w-1/3 w-full">
+			<div class="border-white border-2 m-4 h-max rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+				<div class="imgdiv shadow-sm"></div>
+				<div class="content-div p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur dicta recusandae!</div>
+				<button class="py-2 px-4 flex m-auto rounded-lg bg-blue-700 hover:bg-green-500 transition-all mb-4">Shop Now</button>
+			</div>
+		</div>
+		
+		<div class="h-max md:w-1/3 w-full">
+			<div class="border-white border-2 m-4 h-max rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+				<div class="imgdiv shadow-sm"></div>
+				<div class="content-div p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur dicta recusandae!</div>
+				<button class="py-2 px-4 flex m-auto rounded-lg bg-blue-700 hover:bg-green-500 transition-all mb-4">Shop Now</button>
+			</div>
+		</div>
+		
+		<div class="h-max md:w-1/3 w-full">
+			<div class="border-white border-2 m-4 h-max rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+				<div class="imgdiv shadow-sm"></div>
+				<div class="content-div p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur dicta recusandae!</div>
+				<button class="py-2 px-4 flex m-auto rounded-lg bg-blue-700 hover:bg-green-500 transition-all mb-4">Shop Now</button>
+			</div>
+		</div>
+		
+		<div class="h-max md:w-1/3 w-full">
+			<div class="border-white border-2 m-4 h-max rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
+				<div class="imgdiv shadow-sm"></div>
+				<div class="content-div p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur dicta recusandae!</div>
+				<button class="py-2 px-4 flex m-auto rounded-lg bg-blue-700 hover:bg-green-500 transition-all mb-4">Shop Now</button>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer class="bg-gray-900 flex justify-around flex-col sm:flex-row p-6">
+
+		<div class="flex items-center">
+			<img src="../public/img/batman-logo-png-2037.png" alt="" class="sm:h-28 h-20 flex m-auto">
+		</div>
+		<div class="flex items-center flex-col justify-evenly h-full sm:h-3/4 mt-4 sm:my-auto p-4">
+			<div><a href="./index.html">Home</a></div>
+			<div><a href="./about.html">About</a></div>
+			<div><a href="./shop.html">Shop</a></div>
+		</div>
+
+		<svg height="300" width="5">
+			<defs>
+			  <linearGradient id='fadeGrad' x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset='0%' stop-color='white' stop-opacity="0" />
+				<stop offset='50%' stop-color='white' stop-opacity="1" />
+				<stop offset='100%' stop-color='white' stop-opacity="0" />
+			  </linearGradient>
+			</defs>
+			<rect x="0" y="60" width="2" height="180" style="fill: url('#fadeGrad'); shape-rendering: crispEdges;" />
+		</svg>
+		<div class="flex items-center flex-col justify-center my-8">
+			<div>Wanna Know a Secret?</div>
+			<input type="text" name="email" id="" placeholder="Mail the secret to..." class="p-2 my-4 border-2 border-black rounded-md m-2 text-black">
+			<button type="submit" class="border-2 border-white rounded-md p-2 bg-gray-800 hover:bg-yellow-300 hover:text-gray-900 hover:border-yellow-300">Riddle Me!!!</button>
+		</div>
+		
+		<svg height="300" width="5">
+			<defs>
+			  <linearGradient id='fadeGrad' x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset='0%' stop-color='white' stop-opacity="0" />
+				<stop offset='50%' stop-color='white' stop-opacity="1" />
+				<stop offset='100%' stop-color='white' stop-opacity="0" />
+			  </linearGradient>
+			</defs>
+			<rect x="0" y="60" width="2" height="180" style="fill: url('#fadeGrad'); shape-rendering: crispEdges;" />
+		</svg>
+
+		<div class="flex justify-center flex-col text-center">
+			<div class="font-bold">Contact me</div>
+			<div class="flex m-auto">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope mt-1 mr-2" viewBox="0 0 16 16">
+					<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+				  </svg>
+				<div class="">batman@wayneeneterprises.com</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="../public/js/nav.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript">
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.slider-nav'
+		});
+
+		$('.slider-nav').slick({
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			centerMode: true,
+  			centerPadding: '100px',
+			autoplay: 'true',
+			arrows: false,
+			autoplayspeed: '2000',
+			asNavFor: '.slider-for',
+			dots: true,
+			centerMode: true,
+			focusOnSelect: true
+		});
+	</script>
+</body>
+</html>

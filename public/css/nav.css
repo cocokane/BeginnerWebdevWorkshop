@@ -1,0 +1,14 @@
+@font-face {
+	font-family: batmanFont;
+	src: url("../Font/batmfa__.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+nav{
+	top: 40%;
+}
+nav i{
+	font-size: 1.8rem;
+}
+.batFont{
+	font-family: 'batmanFont', cursive;
+}

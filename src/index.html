@@ -5,19 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		@font-face {
-			font-family: batmanFont;
-			src: url("../public/Font/batmfa__.ttf");
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="../public/css/nav.css">
+	<link rel="shortcut icon" href="../public/img/favicon.ico" type="image/x-icon">
+	<style>	
+
+		.hero{
+			font-size: 5rem;
+			background: url(../public/img/197369.jpg) no-repeat center center/cover;
 		}
-		@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
-		nav{
-			font-family: 'Shizuru', cursive;
-		}
-		.batFont{
-			font-family: 'batmanFont', cursive;
-		}
-		
 		.vertCard{
 			font-family: 'Shizuru', cursive;
 			padding-top: 23.4rem;
@@ -43,25 +39,46 @@
 			transform: translateX(3rem);
 		}
 		footer{
-			height: 40vh;
+			height: max-content;
 			font-family: 'Shizuru', cursive;
 		}
+
+		@media only screen and (max-width: 800px) {
+			.hero {
+				font-size: 3rem;
+				background: url("../public/img/197369.jpg") no-repeat center right/cover;
+			}
+			.vertCard:hover{
+				padding-top: 4rem;
+			}
+			.horCard:hover .horSubCard{
+				transform: translateX(1.1rem);
+			}
+			footer>svg{
+				display: none;
+			}
+		}
 	</style>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<title>Document</title>
+	<title>Batman</title>
 </head>
 
 <body class="bg-gray-800 text-white">
-	<nav class="list-none flex flex-col sm:flex-row w-full justify-center items-center py-4 bg-gray-900 text-xl sticky top-0 z-50">
+	<!-- <nav class="list-none flex flex-col sm:flex-row w-full justify-center items-center py-4 bg-gray-900 text-xl sticky top-0 z-50">
 		<li class="px-4 py-2"><a href="./index.html">Home</a></li>
 		<li class="px-4 py-2"><a href="./about.html">About</a></li>
 		<li class="px-4 py-2"><a href="./achievements.html">Achievements</a></li>
 		<li class="px-4 py-2"><a href="./achievements.html">Shop</a></li>
+	</nav> -->
+
+	<nav class="list-none flex flex-col justify-center items-center px-4 text-xl fixed right-0 z-50 transition-all">
+		<li class="bg-gray-900 p-3 rounded-full hover:bg-yellow-300" id="home"><a href="/src/index.html"><i class="bi bi-house"></i></a></li>
+		<li class="bg-gray-900 p-3 rounded-full my-6 hover:bg-yellow-300" id="bat"><a href="/src/about.html"><img src="../public/img/151366.svg" alt="" class="h-8 w-8"></a></li>
+		<li class="bg-gray-900 p-3 rounded-full hover:bg-yellow-300" id="shop"><a href="/src/shop.html"><i class="bi bi-bag"></i></a></li>
 	</nav>
 
-	<section class="flex py-14 batFont" style="height: 80vh;background: url(../public/img/197369.jpg) no-repeat center center/cover;">
+	<section class="hero flex py-14" style="height: 90vh;">
 		<!-- <div class="batmanbg flex"><img src="../public/img/batman_PNG89.png" class="" style="height: 32rem;"></div> -->
-		<div class="font-bold w-max flex justify-center flex-col batman mx-32 batFont" style="font-size: 5rem;">
+		<div class="font-bold w-max flex justify-center flex-col batman mx-auto sm:mx-32 batFont">
 			<h1 class="text-white text-center">I AM</h1>
 			<h1 class="text-gray-900">BATMAN!!</h1>
 		</div>
@@ -71,7 +88,7 @@
 		<div class="text-5xl text-white batFont text-center">VICTORIES</div>
 		<div class="flex flex-wrap my-4">
 			<!--  -->
-			<div class="h-96 w-1/3">
+			<div class="h-96 w-full sm:w-1/3 my-4">
 				<div class="rounded-lg h-full m-2 border-2 border-white vertCard px-4 text-justify" style="background: url(../public/img/AlGhul.jpg) no-repeat center center/cover;">
 					<div class="">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
@@ -82,7 +99,7 @@
 				</div>
 			</div>
 			<!--  -->
-			<div class="h-96 w-1/3">
+			<div class="h-96 w-full sm:w-1/3 my-4">
 				<div class="rounded-lg h-full m-2 border-2 border-white vertCard px-4 text-justify" style="background: url(../public/img/scarecrow.jpg) no-repeat center center/cover;">
 					<div class="">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
@@ -93,7 +110,7 @@
 				</div>
 			</div>
 			<!--  -->
-			<div class="h-96 w-1/3">
+			<div class="h-96 w-full sm:w-1/3 my-4">
 				<div class="rounded-lg h-full m-2 border-2 border-white vertCard px-4 text-justify" style="background: url(../public/img/riddler1.jpg) no-repeat center right/cover;">
 					<div class="">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
@@ -106,7 +123,7 @@
 
 			<div class="h-96 w-full my-6">
 				<div class="rounded-lg h-full m-2 border-2 border-white horCard flex items-center" style="background: url(../public/img/joker.jpg) no-repeat center center/cover;">
-					<div class="horSubCard w-1/3 flex flex-col items-center">
+					<div class="horSubCard w-full sm:w-1/3 flex flex-col items-center">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloribus eligendi similique necessitatibus ipsam quam error eos soluta recusandae neque amet unde excepturi, quasi ea id, minima, inventore facere autem saepe? Doloremque?
 							<button class="bg-blue-900 rounded-xl my-4 py-2 px-4 flex mx-auto">Know More</button>
@@ -115,7 +132,7 @@
 				</div>
 			</div>
 			<!--  -->
-			<div class="h-96 w-2/3">
+			<div class="h-96 w-full sm:w-2/3 my-4">
 				<div class="rounded-lg h-full m-2 p-2 border-2 border-white horCard flex items-center" style="background: url(../public/img/scarecrow.jpg) no-repeat center center/cover;">
 					<div class="horSubCard w-96 flex flex-col items-center">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
@@ -126,7 +143,7 @@
 				</div>
 			</div>
 			<!--  -->
-			<div class="h-96 w-1/3">
+			<div class="h-96 w-full sm:w-1/3 my-4">
 				<div class="rounded-lg h-full m-2 border-2 border-white vertCard px-4 text-justify" style="background: url(../public/img/bane.jpg) no-repeat center center/cover;">
 					<div class="">
 						<div class="bg-black bg-opacity-40 p-4 rounded-lg">
@@ -139,16 +156,15 @@
 		</div>
 	</section>
 
-	<footer class="bg-gray-900 flex justify-around">
+	<footer class="bg-gray-900 flex justify-around flex-col sm:flex-row p-6">
 
 		<div class="flex items-center">
-			<img src="../public/img/batman-logo-png-2037.png" alt="" class="h-28">
+			<img src="../public/img/batman-logo-png-2037.png" alt="" class="sm:h-28 h-20 flex m-auto">
 		</div>
-		<div class="flex items-center flex-col justify-center h-max my-auto p-4">
-			<div>Home</div>
-			<div>About</div>
-			<div>Achievements</div>
-			<div>Shop</div>
+		<div class="flex items-center flex-col justify-evenly h-full sm:h-3/4 mt-4 sm:my-auto p-4">
+			<div><a href="./index.html">Home</a></div>
+			<div><a href="./about.html">About</a></div>
+			<div><a href="./shop.html">Shop</a></div>
 		</div>
 
 		<svg height="300" width="5">
@@ -161,10 +177,10 @@
 			</defs>
 			<rect x="0" y="60" width="2" height="180" style="fill: url('#fadeGrad'); shape-rendering: crispEdges;" />
 		</svg>
-		<div class="flex items-center flex-col justify-center">
+		<div class="flex items-center flex-col justify-center my-8">
 			<div>Wanna Know a Secret?</div>
-			<input type="text" name="email" id="" placeholder="Mail the secret to..." class="p-2 my-4 border-2 border-black rounded-md m-2">
-			<button type="submit" class="border-2 border-white rounded-md p-2 bg-gray-800 hover:bg-yellow-300 hover:text-gray-900">Riddle Me!!!</button>
+			<input type="text" name="email" id="" placeholder="Mail the secret to..." class="p-2 my-4 border-2 border-black rounded-md m-2 text-black">
+			<button type="submit" class="border-2 border-white rounded-md p-2 bg-gray-800 hover:bg-yellow-300 hover:text-gray-900 hover:border-yellow-300">Riddle Me!!!</button>
 		</div>
 		
 		<svg height="300" width="5">
@@ -178,9 +194,9 @@
 			<rect x="0" y="60" width="2" height="180" style="fill: url('#fadeGrad'); shape-rendering: crispEdges;" />
 		</svg>
 
-		<div class="flex justify-center flex-col">
+		<div class="flex justify-center flex-col text-center">
 			<div class="font-bold">Contact me</div>
-			<div class="flex">
+			<div class="flex m-auto">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope mt-1 mr-2" viewBox="0 0 16 16">
 					<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
 				  </svg>
@@ -189,5 +205,9 @@
 		</div>
 
 	</footer>
+
+	
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="../public/js/nav.js"></script>
 </body>
 </html>
